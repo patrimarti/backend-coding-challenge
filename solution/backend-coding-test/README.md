@@ -34,7 +34,7 @@ spring.datasource.password=<password_db>
 ####Build and run the app
 
 ```bash
-cd <project_dir>
+cd backend-coding-test
 mvn spring-boot:run
   ```
 
