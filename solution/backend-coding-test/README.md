@@ -35,7 +35,7 @@ By default MySQL connects to the port 3306 in localhost and is using/creating (i
 spring.datasource.url=jdbc:mysql://localhost:3306/engagetech?useSSL=false&createDatabaseIfNotExist=true
 ```
 
-#### Build and run the app
+#### Build and run the Rest Service
 
 ```bash
 cd solution/backend-coding-test/
