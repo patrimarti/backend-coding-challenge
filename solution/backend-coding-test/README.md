@@ -30,9 +30,29 @@ Set MySQL credentials in order to connect the dabatase. Go to `project_dir/solut
 spring.datasource.username=<user_db>
 spring.datasource.password=<password_db>
 ```
-By default MySQL connects to the port 3306 in localhost and is using/creating (if it doesn't exist) a database called `engagetech_pmg`. This can be changed editing:
+By default MySQL connects to the port 3306 in localhost and is using a database called `engagetech_pmg`. 
+
+This can be changed editing:
 ```text
-spring.datasource.url=jdbc:mysql://localhost:3306/engagetech_pmg?useSSL=false&createDatabaseIfNotExist=true
+spring.datasource.url=jdbc:mysql://localhost:3306/engagetech_pmg?useSSL=false
+```
+Run the following DDL in order to set the database:
+```sql
+CREATE DATABASE IF NOT EXISTS `engagetech_pmg` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `engagetech_pmg`;
+
+CREATE TABLE `expense` (
+  `id` bigint(20) NOT NULL,
+  `amount` double NOT NULL,
+  `date` date NOT NULL,
+  `reason` varchar(255) DEFAULT NULL,
+  `vat` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `expense`
+  ADD PRIMARY KEY (`id`);
+ALTER TABLE `expense`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
 ```
 
 #### Build and run the Rest Service
