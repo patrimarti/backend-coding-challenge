@@ -42,7 +42,7 @@ cd solution/backend-coding-test/
 mvn spring-boot:run
   ```
 
-The application will be started in `http://localhost:4884`
+The application will be started in `https://localhost:4884`
 In order to change the port, go to: 
 `project_dir/solution/backend-coding-test/src/main/resources/application.properties` and edit the line:
 ```text
