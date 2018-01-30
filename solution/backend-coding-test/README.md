@@ -23,7 +23,7 @@ Prerequisites:
 * Install Maven
 * Install MySQL
 
-####MySQL requisites:
+#### MySQL requisites:
 Set MySQL credentials in order to connect the dabatase. Go to `project_dir/src/main/resources/application.properties` and edit:
 
 ```text
@@ -35,7 +35,7 @@ By default is using/creating (if it doesn't exist) a database called `engagetech
 spring.datasource.url=jdbc:mysql://localhost:3306/engagetech?useSSL=false&createDatabaseIfNotExist=true
 ```
 
-####Build and run the app
+#### Build and run the app
 
 ```bash
 cd backend-coding-test
