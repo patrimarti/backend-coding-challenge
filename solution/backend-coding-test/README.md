@@ -24,7 +24,7 @@ Prerequisites:
 * Install MySQL
 
 #### MySQL requisites:
-Set MySQL credentials in order to connect the dabatase. Go to `project_dir/src/main/resources/application.properties` and edit:
+Set MySQL credentials in order to connect the dabatase. Go to `project_dir/solution/backend-coding-test/src/main/resources/application.properties` and edit:
 
 ```text
 spring.datasource.username=<user_db>
@@ -38,13 +38,13 @@ spring.datasource.url=jdbc:mysql://localhost:3306/engagetech?useSSL=false&create
 #### Build and run the app
 
 ```bash
-cd backend-coding-test
+cd solution/backend-coding-test/
 mvn spring-boot:run
   ```
 
 The application will be started in `http://localhost:4884`
 In order to change the port, go to: 
-`project_dir/src/main/resources/application.properties` and edit the line:
+`project_dir/solution/backend-coding-test/src/main/resources/application.properties` and edit the line:
 ```text
 server.port=4884 
 ```
