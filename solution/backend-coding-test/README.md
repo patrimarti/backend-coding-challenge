@@ -36,7 +36,7 @@ This can be changed editing:
 ```text
 spring.datasource.url=jdbc:mysql://localhost:3306/engagetech_pmg?useSSL=false
 ```
-Run the following DDL in order to set the database:
+Run the following DDL in order to initialize the database:
 ```sql
 CREATE DATABASE IF NOT EXISTS `engagetech_pmg` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `engagetech_pmg`;
